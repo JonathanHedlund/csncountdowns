@@ -1,0 +1,157 @@
+body {
+    background-color: #1A1A1A;
+    font-family: 'IBM Plex Sans', 'Open Sans', 'Montserrat', 'PT Sans',  Arial, sans-serif;
+    height: 90vh;
+}
+.App {
+    margin-left: 10%;
+    display: flex;
+    flex-flow: column;
+}
+p {
+    color: white;
+}
+.intro-text {
+    width: 240px;
+    margin-top: 15%;
+    font-size: 22px;
+}
+.intro-text p {
+    margin: 10px 0;
+}
+.intro-text hr {
+    margin: 0;
+}
+.timer div {
+    display: flex;
+    flex-flow: wrap;
+    margin: 40px 0 20px;
+}
+.timer p {
+    font-size: 57px;
+    margin: 10px 20px 10px 0;
+    font-style: normal;
+    font-weight: lighter;
+}
+button {
+    z-index: 50;
+}
+audio {
+    z-index: 50;
+    margin-top: 20px;
+}
+.link-csn {
+   font-size: 18px;
+   font-weight: lighter;
+   display: flex;
+   justify-content: space-between;
+   z-index: 500;
+   margin-bottom: 40px;
+}
+.link-csn a {
+    color: white;
+    text-decoration: none;
+}
+.link-csn a:hover {
+    text-decoration: underline;
+}
+.jonathan {
+    float: right;
+    margin: 0 80px;
+    text-align: end;
+}
+.jonathan p {
+    margin: 0;
+}
+.qoute-of-the-day {
+    max-width: auto;
+    display: flex;
+    margin-bottom: 6%;
+    max-width: 600px;
+    text-align: center;
+}
+.qoute-of-the-day div {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+.quote {
+    margin: 0px;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 20px;
+    float: left;
+}
+.quoter {
+    margin: 2px;
+    font-size: 20px;
+    font-style: italic;
+}
+.csnAmount {
+    margin-bottom: 30px;
+}
+.csnAmount p {
+    font-size: 21px;
+    font-weight: lighter;
+}
+.csnAmount p em {
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 740px) {
+    .timer {
+        width: 300px;
+    }
+    .App {
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .intro-text {
+        margin-top: 50px;
+    }
+    .link-csn {
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .jonathan {
+        text-align: center;
+        margin: 20px;
+        width: 80%;
+    }
+    .csnAmount {
+        width: 315px;
+        text-align: center;
+    }
+    .qoute-of-the-day div { 
+        width: 280px;
+        text-align: center;
+    }
+    .qoute-of-the-day {
+        justify-content: center;
+        margin: 10px 0 35px;
+    }
+    .timer p {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .timer p {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-height: 730px) {
+    .intro-text {
+        margin-top: 10%;
+    }
+}
+canvas {
+    width: 100%;
+    height: 100%;
+}
